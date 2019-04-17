@@ -81,7 +81,7 @@ void loop() {
 
   float celsius = event.temperature; // celcius variable set to what we get from dht22
   float fahrenheit = (celsius * 1.8) + 32; // fahrenheit variable conversion
-  float pressureKPA = mpl115a2.getPressure();; // pressure variable set to what we get from pressure sensor
+  float pressureKPA = mpl115a2.getPressure(); // pressure variable set to what we get from pressure sensor
 
   // prints celcius message on serial
   Serial.print("Celsius: ");
