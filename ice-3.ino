@@ -33,6 +33,12 @@ AdafruitIO_Feed *pressure = io.feed("pressure");
 void setup() {
 
   Serial.begin(115200); // start the serial connection
+  
+  // Prints the results to the serial monitor
+  Serial.print("This board is running: ");  //Prints that the board is running
+  Serial.println(F(__FILE__));
+  Serial.print("Compiled: "); //Prints that the program was compiled on this date and time
+  Serial.println(F(__DATE__ " " __TIME__));
 
   while(! Serial); // wait for serial monitor to open
 
